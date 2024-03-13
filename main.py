@@ -1,77 +1,61 @@
-import sys
 
+import math
+import random
 def zad1():
-    lista = []
-    counter = 0
-    zdanie = input("Wpisz zdanie: ")
-    lista = zdanie.split()
-    for i in range(0,len(lista)):
-        counter += 1
-    print(counter)
 
+    rownanie1 = ((math.e**4)-math.log(34,2))**(1/3)
+    print(round(rownanie1,2))
+    rownanie2=(math.log(20,math.e)+math.cos(45)+math.e)**(1/3)
+    print(round(rownanie2,2))
+    rownanie3=(math.log(20,3)+math.sin(45)*(5/8))**(1/4)
+    print(round(rownanie3,2))
+    rownanie4=math.log(23,3)+((math.sin(34)+5)**(1/4))
+    print(round(rownanie4,2))
+    rownanie5=(math.log(32,2)+math.pi+math.sin(56))**(1/4)
+    print(round(rownanie5,2))
 def zad2():
-    sys.stdout.write('Wczytaj 1 liczbe: ')
-    a = int(sys.stdin.readline())
-    sys.stdout.write('Wczytaj 2 liczbe: ')
-    b = int(sys.stdin.readline())
-    sys.stdout.write('Wczytaj 3 liczbe: ')
-    c = int(sys.stdin.readline())
-    wynik = a**b+c
-    print(wynik)
+    a = "A"
+    szerokosc = 1
+    wysokosc = int(input("Podaj wysokosc wiezy "))
+    if wysokosc > 10:
+        print("Nie wolno!")
+        return 0
+    for i in range(1,wysokosc+1):
+        print(a*szerokosc)
+        szerokosc +=1
+
 def zad3():
-    napis = input("Podaj slowo: ")
-    if napis == napis[::-1]:
-        print("Napis jest palindromem")
+    a = " "
+
+    szerokosc = 1
+
+    wysokosc = int(input("Podaj wysokosc wiezy "))
+    if wysokosc > 10:
+        print("Nie wolno!")
     else:
-        print("napis nie jest palindromem")
-def zad4():
-    counter = 0
-    liczba = int(input("Podaj liczbę: "))
-    for i in range(1, liczba+1):
-        if liczba%i==0:
-            counter+=1
-    if counter == 2:
-        print("liczba jest pierwsza")
-    else:
-        print("liczba nie jest pierwsza")
+        licznik = wysokosc
+        for i in range(1,wysokosc+1):
+            print((a*licznik),"a" * szerokosc )
+            szerokosc += 2
+            licznik -=1
 def zad5():
-    counter = 0
-    suma= 0
+    wektor2d =[]
+    n=int(input('Podaj wymiar wektora nxn: '))
+    pomocniczy_wektor= []
+    for i in range(1,n+1):
+        pomocniczy_wektor.clear()
+        pomocniczy_wektor.append(random.randint(0, 100))
+        wektor2d.append(pomocniczy_wektor)
 
 
+    print(wektor2d)
 
-def zad6():
-    lista=[1,2,3.5,5,6.5,7,8.2,9,10,3]
-    lista1=[]
-    for i in range(0,len(lista)):
-        wynik=lista[i]*lista[i]
-        lista1.append(wynik)
-    print(lista1)
-def zad7():
-    counter=0
-    lista = []
-    while counter != 10:
-        liczba = int(input("Podaj liczbę: "))
-        counter += 1
-        if liczba % 2 == 0:
-            lista.append(liczba)
-    print(lista)
-def zad8():
-    lista =['banan',1,4,5,'drzewo',6,6,'drzewo']
-    slownik = {}
-    for i in range(0,len(lista)):
-        slownik[i] = lista[i]
-        if
-    print(slownik)
+
 
 def main():
     #zad1()
     #zad2()
     #zad3()
-    #zad4()
     #zad5()
-    #zad6()
-   # zad7()
-    zad8()
 if __name__ == '__main__':
     main()
