@@ -1,0 +1,40 @@
+Zad 1.
+a) 0,47178
+b) 0,74431
+c) 0,32
+
+Zad 2.
+0,06
+
+Zad 3.
+a) 0,841345
+b) 0,158655
+c) 0,725747
+d) 0,008198
+e) 0,420740 - 0,211855 = 0.208885
+
+Zad 4.
+a) 0,044565
+b) 0,211855
+c) 41,551464 punktów
+d) 74,448536 punktów
+
+Zad 5
+a) 0,008198
+b) 0,5
+
+Rozkład normalny:
+Statystyka ->
+Kalkulator prawdopodobieństwa -> Rozkłady 
+-> rozkład normalny (Z)
+
+Jak mamy N(m , s)
+średnia -> m
+odch.std -> s
+stałe skalowanie wyłączamy
+
+Rozkład bernouliego/dwumianowy:
+Statystyka -> Analiza mocy testu
+-> Rozkłady prawdopodobieństwa ->
+Rozkład dwumianowy
+
